@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    height: 10vh;
+    width: 100%;
+    background: grey;
+    text-align: right;
+}
+
+main{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background: rgb(223, 223, 223); 
+}
+
+.box {
+    height: 65vh; 
+    width: 70vw;
+}
+
+.left{
+    height: 65vh; 
+    width: 27vw;
+    float: left;
+    background: rgb(18, 148, 196);
+}
+
+.right{
+    height: 65vh; 
+    width: 43vw;
+    float: right;
+    background: white;
+}
+
+table {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+
+td input{
+    width: 22vw;
+    height: 5vh;
+}
+
+footer{
+    height: 10vh;
+    width: 100%;
+    background: grey;
+    text-align: right;
+}
+input{
+   margin-bottom: 20px;
+   margin-left: 50px;
+   height: 50px;
+   width: 70%;
+}
+input:hover{
+    background-color: aqua;
+    color: white;
+}
+#messageBtn{
+    background-color: aqua;
+    color: white;
+    height: 50px;
+    width: 50%;
+    margin-top: 10px;
+    margin-left:70px;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+   
+
+}
+

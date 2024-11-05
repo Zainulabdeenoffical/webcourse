@@ -1,0 +1,40 @@
+
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$font-family-base: 'Arial, sans-serif';
+
+
+body {
+    font-family: $font-family-base;
+}
+
+
+header {
+    background-color: $primary-color;
+    color: white;
+    .nav-link {
+        color: white;
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+
+#about img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#projects img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+form {
+    .form-control {
+        border-radius: 0.25rem;
+    }
+}

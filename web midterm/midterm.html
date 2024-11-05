@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap\bootstrap-5.0.2-dist\css\bootstrap.min.css">
+    <title>Mid Term Lab </title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        #form1{
+            margin-bottom: 20px;
+            
+        }
+        #form2{
+             margin-bottom: 20px;
+            
+             
+        }
+        
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        input:focus {
+            border-color: blue;
+            outline: none;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: darkblue;
+        } 
+        
+
+        
+    </style>
+</head>
+<body>
+  <div class="container"  id ="main">
+    <div class="form" id = "form1">
+        <Label>Login</Label>
+        <br>
+        <input type="email" id="email" placeholder="codingstella@gmail.com">
+        <br>
+        <input id="fullname" placeholder="Full Name">
+        <br>
+        <input type="password" id="loginpassword" placeholder="password">
+        <br>
+        <button type="submit" id="logins" style="background-color: blue;"> Submit Now</button>
+        
+    </div>
+    <div class="form" id="form2">
+        <br>
+        <Label>SignUp</Label>
+        <br>
+        <input type="email" id="semail" placeholder="codingstella@gmail.com" required>
+        <br>
+        <input type="password" id = "spassword"  lenght="8" required>
+        <br>
+        <input type="password" id = "cpassword"  lenght="8" required>
+        <br>
+        <button type="submit" id="signups" style="background-color: blue;">Submit Now</button>
+   </div>
+ </div>  
+</body>
+<script>
+    let submitButton = document.getElementById('logins');
+
+submitButton.addEventListener('click', function() {
+    let lemail = document.getElementById('email').value;
+    let lpassword = document.getElementById('loginpassword').value;
+
+    if (lemail === 'admin@gmail.com' && lpassword === 'admin') {
+        alert("Login successfully");
+    } else {
+        alert('Email and password incorrect');
+    }
+});
+let submitbutton2 = document.getElementById('signups');
+ submitbutton2 = document.addEventListener('click',function(){
+    let mpassword = document.getElementById('semail').value;
+    let cpassword = document.getElementById('cpassword').value;
+    let semail = document.getElementById('semail').value;
+    let regx = '[a-zA-z]'
+    
+   
+    
+     if (mpassword == cpassword)
+    {
+        alert("correct")
+    }
+    else {
+        alert('password not match')
+    }
+     
+    
+});
+
+   
+</script>
+<script src="jquery-3.7.1.min.js"> </script>
+</html>

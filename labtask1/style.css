@@ -1,0 +1,32 @@
+body {
+  font-family: "Arial, sans-serif";
+ }
+
+header {
+  background-color: #007bff;
+  color: white; 
+}
+  header .nav-link
+   {
+    color: white;
+ }
+    header .nav-link:hover
+     {
+      color: #6c757d; 
+    }
+
+#about img {
+  max-width: 100%;
+  height: auto;
+ }
+
+#projects img {
+  max-width: 100%;
+  height: auto;
+ }
+
+form .form-control {
+  border-radius: 0.25rem;
+ }
+
+

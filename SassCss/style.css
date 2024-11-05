@@ -1,0 +1,36 @@
+* {
+  padding: 0%;
+  margin: 0%; }
+
+.card {
+  padding: 20px;
+  background: #2ecc71;
+  border-radius: 10px;
+  text-align: center; }
+  .card .card-title {
+    font-size: 16px;
+    color: white; }
+  .card .card-description {
+    font-size: 13px;
+    color: white; }
+  .card .card-button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none; }
+  .card .card-button:hover {
+    background-color: yellow;
+    cursor: pointer; }
+  @media (max-width: 768px) {
+    .card {
+      padding: 10px;
+      border-radius: 15px; } }
+
+.abc {
+  background-color: red; }
+
+.xyz {
+  background-color: blue; }
+
+/*# sourceMappingURL=style.css.map */

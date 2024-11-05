@@ -1,0 +1,65 @@
+@media screen {
+    body {
+      font-size: 16px;
+     
+    }
+    @media screen and (min-width: 768px) {
+      body {
+        background-color: lightblue;
+      }
+    }
+    @media screen and (orientation: landscape) {
+      body {
+        background-color: green;
+      }
+    }
+    @media screen and (min-resolution: 300dpi) {
+      body {
+        background-color: orange;
+      }
+    }
+    @media screen and (min-width: 768px) and (orientation: portrait) {
+      body {
+        font-size: 18px;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      body {
+        font-size: 14px;
+      }
+    }
+    @media screen and (min-width: 601px) and (max-width: 1024px) {
+      body {
+        font-size: 16px;
+      }
+    }
+    @media screen and (min-width: 1025px) {
+      body {
+        font-size: 18px;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      body {
+        background-color: lightgray;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      body {
+        background-color: lightgray;
+      }
+    }
+/* Default for mobile */
+body {
+  font-size: 14px;
+}
+
+/* Larger devices */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+                              
+}
+  
+  }
+  

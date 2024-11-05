@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    
+    <header>
+        <h1>Welcome to the Laptop Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to the Best Laptop Deals!</h2>
+            <p>At Laptop Shop, we’re dedicated to bringing you the latest laptops and 
+                accessories for every need—whether you’re a professional, student, 
+                or gamer. Explore our top brands and enjoy unbeatable prices, detailed product
+                 insights, and exceptional customer service. Discover quality and performance with us 
+                 today!</p>
+            <button id="changeTextBtn">Change Text</button>
+            <p id="dynamicText">This is the best place for laptops.</p>
+        </section>
+
+        <section id="products">
+            <h2>Our Top Products</h2>
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="hp.jpg" alt="HP Spectre x360">
+                    <h3>HP Spectre x360</h3>
+                    <p>The HP Spectre x360 is a premium convertible 
+                        laptop featuring a stunning 13.3-inch or 14-inch 4K OLED display.</p>
+                    <button class="toggleDescriptionBtn">Read more</button>
+                    <p class="productDescription" style="display: none;">The HP Spectre x360 is a premium 
+                        convertible laptop featuring a stunning 13.3-inch or 14-inch 4K OLED display. Powered
+                         by the latest Intel processors, it delivers exceptional performance and up to 15 hours
+                          of battery life. Its sleek, all-metal design is lightweight and durable, with a versatile 
+                          360-degree hinge for easy mode switching. Additional features include a backlit keyboard 
+                          and multiple USB-C ports, making it perfect for professionals on the go.</p>
+                </div>
+                <div class="product-card">
+                    <img src="dell.jpg" alt="Dell XPS 13">
+                    <h3>Dell XPS 13</h3>
+                    <p>The Dell XPS 13 is a compact powerhouse designed for performance
+                         and portability. With its stunning InfinityEdge display.</p>
+                    <button class="toggleDescriptionBtn">Read more</button>
+                    <p class="productDescription" style="display: none;">The Dell XPS 13 is a compact powerhouse designed
+                         for performance and portability. With its stunning InfinityEdge display, sleek aluminum chassis,
+                          and powerful Intel processors, it offers an immersive viewing experience and exceptional speed. 
+                          Weighing just under 3 pounds and featuring long battery life, the XPS 13 is perfect for on-the-go
+                           professionals and students who need a reliable laptop without compromising style.</p>
+                </div>
+                <div class="product-card">
+                    <img src="download.jpg" alt="Apple MacBook Pro">
+                    <h3>Apple MacBook Pro</h3>
+                    <p>The Apple MacBook Pro is a powerful and sleek laptop designed for professionals and creatives.</p>
+                    <button class="toggleDescriptionBtn">Read more</button>
+                    <p class="productDescription" style="display: none;">The Apple MacBook Pro combines power and elegance, 
+                        featuring a brilliant Retina display and the latest M1 or M2 chip for outstanding performance.
+                         With options up to 32GB of RAM and 8TB of SSD storage, it excels in demanding tasks like video
+                          editing and software development. Boasting up to 20 hours of battery life, it’s perfect for
+                           professionals and creatives seeking reliability and portability in a sleek aluminum design.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Our Shop</h2>
+            <p>Welcome to Laptop Show Shop, your premier destination for the latest and greatest in laptops and accessories. 
+               We empower our customers with cutting-edge technology that enhances productivity, creativity, and entertainment. 
+               Whether you're a professional seeking high-performance devices, a student needing a reliable laptop for studies, 
+               or a gamer looking for top-tier gaming rigs, we have a wide selection to meet every need and budget. 
+               Our commitment goes beyond just offering products; we provide expert guidance, customer-focused service, 
+               and post-purchase support to ensure your shopping experience is smooth and enjoyable. Explore our extensive range 
+               of laptops from leading brands, compare features, and find the perfect match for your tech needs!</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Phone: +92325 850 9789</p>
+            <p>Email: zain@laptopshop.com</p>
+            <p id="currentDateTime"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Laptop Shop</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

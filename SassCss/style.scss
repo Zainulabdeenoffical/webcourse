@@ -1,0 +1,70 @@
+$primary-color:#3498db;
+$secondary-color:#2ecc71;
+$card-padding:20px;
+$border-radius:10px;
+*{
+    padding: 0%;
+    margin: 0%;
+}
+@mixin  button-style {
+    background-color: $primary-color;
+    color :white;
+    padding: 10px 20px;
+    border-radius: $border-radius;
+    border: none;
+ 
+
+
+}
+$max-width:100vw;
+@mixin responsive ($max-width){
+    @media (max-width:$max-width)
+    {
+        @content;
+    }
+}
+.card {
+    padding: 20px;
+   background: $secondary-color;
+   border-radius: $border-radius;
+    text-align: center;
+   .card-title {
+    font-size: 16px;
+    color :white;
+
+   }
+   .card-description{
+    font-size: 13px;
+   color:white;
+   }
+   .card-button {
+   
+    @include button-style;
+   }
+   .card-button:hover{
+    background-color: yellow;
+    cursor: pointer;
+   }
+   @include responsive(768px)
+   {
+    padding: 10px;
+    border-radius: 15px;
+   }
+
+}
+
+$colors : red , green, blue, yellow;
+
+@each $c in $colors{
+    @if $c==red{
+        .abc{
+            background-color: $c;
+        }
+    }
+    @else if $c==blue
+    {
+        .xyz{background-color: $c;}
+    }
+}
+
+
