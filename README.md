@@ -52,11 +52,11 @@ To get a local copy up and running, follow these steps:
 ### Installation
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/Zainulabdeenoffical/webcourse
    ```
 2. Navigate into the project directory:
    ```bash
-   cd your-repo-name
+   cd webcourse
    ```
 3. Install dependencies (if any):
    ```bash
